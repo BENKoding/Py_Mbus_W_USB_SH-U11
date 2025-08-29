@@ -1,0 +1,28 @@
+serial:
+  baudrate: 38400
+  parity: N   # N/E/O
+  stopbits: 2 # 1/2
+  bytesize: 8
+  timeout_s: 0.3
+
+scan:
+  start_id: 1
+  end_id: 247
+  read_addr: 0
+  read_count: 1
+  backoff_ms: 50
+
+acquisition:
+  enabled: true
+  hz: 5
+
+ui:
+  language: fr
+  read_only_default: true
+
+logging:
+  level: INFO
+  max_bytes: 1048576
+  backup_count: 3
+  path: logs/app.log
+
